@@ -1,0 +1,39 @@
+body{
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black ;
+    transition: o.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: skyblue;
+}
+

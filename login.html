@@ -1,0 +1,126 @@
+<html>
+<head>
+<title></title>
+
+<body>
+	<div class="background-image">
+
+	<div class="loginbox">
+		<div img src="avatar.jpg" class="avatar" >
+
+    
+     <h1 style="font-family: important">Login Here</h1>
+     <form action="index.html" onsubmit="return auth() " >
+     	<p>User Email</p>
+     	<input type="email" name="name" placeholder="user Email" id="email">
+     	<p>Password</p>
+     	<input type="password" name="pass" placeholder="Enter passward" id="password">
+       <button type="submit" > Login</button><br><br>
+        <a href="#" style="font-size: 18">forget Password?</a><br>
+        <a href="signup.html" style="font-size: 18">Don't have an account? Create one</a>
+     </form>    
+    </div>
+</div>
+</div>
+
+<style>
+
+.background-image{
+	background-image: url('login.jpg');
+	background-size: cover;
+	width: 220vh;
+	height: 106vh;
+}
+.loginbox{
+	width:320px;
+	height: 420px;
+	background:transparent;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+
+
+}
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 30px;
+	font : monospace;
+
+}
+.loginbox{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.loginbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginbox input[type="email"], input[type="password"]{
+	border: none;
+	border-bottom: 1px solid skyblue;
+	background: transparent;
+	outline: none;
+	height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox button[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: red;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+
+} 
+.loginbox button[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+.loginbox a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+.loginbox a:hover
+{
+	color: white;
+}
+
+
+</style>
+<script>
+
+function auth(){
+	let email=document.getElementById("email").value;
+  let pass=document.getElementById("password").value;   
+    
+    
+    if(email=='suhail@gmail.com' && pass=='12345678'){
+    	
+    	
+    	alert("successfull");
+    }
+    else{
+    	alert("Email and password must required");
+    	return false;
+    }
+        
+    
+
+}
+
+
+</script>>
+</body>
+</html>

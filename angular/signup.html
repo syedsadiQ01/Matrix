@@ -1,0 +1,158 @@
+<html>
+<head><title></title>
+</head>
+
+<body>
+	
+
+
+	<div class="signin">
+		<div img src="avatar.jpg" class="avatar" >
+
+    
+     <h1>Sign In</h1>
+     <form  action="index.html" onsubmit="return validate()">
+     	<p>UserName</p>
+     	<input type="text" name="name" placeholder="user name" id="name" >
+     	<p>Email</p>
+     	<input type="email" name="name" placeholder="user Email" id="email">
+     	<p>Password</p>
+     	<input type="password" name="pass" placeholder="Enter passward" id="pass" >
+     	<p>confirm Password</p>
+     	<input type="password" name="name" placeholder="confirm password" id="cpass">
+       <button type="submit">Sign In</button><br>
+        
+     </form>    
+    </div>
+</div>
+<style>
+body{
+	margin:0;
+	padding: 0;
+	background-image:url('login.jpg');
+	background-size:cover;
+	background-position: center;
+	font-family:sans-serif;
+}
+.signin{
+	width:320px;
+	height: 550px;
+	background:transparent;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+
+
+}
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 30px;
+
+}
+.signin{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.signin input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.signin input[type="text"], input[type="email"],input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.signin a[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: red;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+
+} 
+.signin a[type="submit"]:hover
+{
+	cursor: pointer;
+	background: blue;
+	color: #000;
+}
+</style>
+
+
+<script>
+
+
+function validate(){
+	let name=document.getElementById("name").value;
+let email=document.getElementById("email").value;
+let pass=document.getElementById("pass").value;
+let pass1=document.getElementById("cpass").value;
+	
+	
+	if(name==""){
+		alert("name required");
+		return false;
+			}
+
+	if(email==""){
+		alert("Email required");
+		return false;
+			}
+
+	
+	if(pass==""){
+		alert("password reqiured");
+		return false;
+	}		
+
+  
+  if(pass1==""){
+  	alert("confirm password required");
+  	return false;
+  }
+  else if(pass1!=pass){
+  	alert("password does nt match");
+  	return false;
+  }
+
+   
+
+
+	
+	}		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+
+</html>
